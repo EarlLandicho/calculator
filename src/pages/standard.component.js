@@ -27,6 +27,7 @@ const mapStateToProps = createStructuredSelector({
     operation: getOperation
 })
 
+
 // const mapStateToProps = state => ({
 //     firstInput: state.firstInput,
 //     secondInput: state.secondInput,
