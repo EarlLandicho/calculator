@@ -16,11 +16,9 @@ export function doOperation(firstInput, secondInput, operation)
     firstInput = parseInt(firstInput);
     secondInput = parseInt(secondInput);
 
-
     switch(operation)
     {
         case "+":
-            console.log("check");
             return firstInput + secondInput;
         case "-":
             return secondInput - firstInput;
@@ -38,6 +36,12 @@ export function doOperation(firstInput, secondInput, operation)
             return Math.cos(firstInput);
         case "tan":
             return Math.tan(firstInput);
+        case "to_kilograms":
+            
+            return firstInput * 0.453592
+        case "to_pounds":
+            return firstInput * 2.2046
+
         default:
             return "operation didn't work"
     }

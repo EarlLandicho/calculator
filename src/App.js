@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom';
-import ScientificCalculatorPage from './pages/scientific.component';
+import ConversionPage from './pages/conversion.component';
 import StandardCalculatorPage from './pages/standard.component';
 import HomePage from './pages/homepage.component';
 
@@ -9,11 +9,11 @@ function App() {
     <div >
       <Link exact to='/standard'>Standard</Link>
       <br></br>
-      <Link exact to='/scientific'>Scientific</Link>
+      <Link exact to='/scientific'>Conversion</Link>
       <Switch>
         <Route exact path = "/" component = {HomePage}/>
         <Route exact path = "/standard" component = {StandardCalculatorPage}/>
-        <Route exact path = "/scientific" component = {ScientificCalculatorPage}/>
+        <Route exact path = "/scientific" component = {ConversionPage}/>
       </Switch>
     </div>
   );

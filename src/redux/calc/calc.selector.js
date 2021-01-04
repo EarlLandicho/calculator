@@ -1,6 +1,6 @@
 import {createSelector} from 'reselect'
 
-const calculator = state => state.calc;
+const calculator = state => state;
 
 export const getFirstInput = createSelector(
     [calculator],

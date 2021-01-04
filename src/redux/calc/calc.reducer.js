@@ -79,6 +79,18 @@ export default function calcListReducer(state = INITIAL_STATE, action)
                 operation: "tan"
                 
             }
+        case 'TO_KILOGRAMS':
+            return {
+                ...state,
+                finalResult: doOperation(state.firstInput, state.secondInput, "to_kilograms")
+                
+            }
+        case 'TO_POUNDS':
+            return {
+                ...state,
+                finalResult: doOperation(state.firstInput, state.secondInput, "to_pounds")
+                
+            }
         default:
             return state
     }

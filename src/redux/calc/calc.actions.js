@@ -72,7 +72,19 @@ export function tan()
     }
 }
 
+export function toKilograms()
+{
+    return {
+        type: 'TO_KILOGRAMS'
+    }
+}
 
+export function toPounds()
+{
+    return {
+        type: 'TO_POUNDS'
+    }
+}
 
 
 
