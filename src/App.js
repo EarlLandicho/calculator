@@ -6,7 +6,7 @@ import HomePage from './pages/homepage.component';
 
 function App() {
   return (
-    <div >
+    <div>
       <Link exact to='/standard'>Standard</Link>
       <br></br>
       <Link exact to='/scientific'>Conversion</Link>
